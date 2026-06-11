@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+<!-- Google Tag Manager (delayed 3s) -->
+<script>
+window.dataLayer=window.dataLayer||[];
+setTimeout(function(){
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-K2K6PR6L');</script>
+})(window,document,'script','dataLayer','GTM-K2K6PR6L');
+},3000);
+</script>
 <!-- End Google Tag Manager -->
 
 <!-- ============================================================
@@ -22,7 +27,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <title>Psicóloga Particular Jessica Wesley Cabral Freire | Gestalt-terapia Online e Presencial no RJ</title>
 <meta name="description" content="Psicóloga CRP 05/86018. Atendimento em Gestalt-terapia para ansiedade, burnout, traumas e comunidade LGBTQIA+. Online e presencial na Barra da Tijuca, Madureira e Valqueire (RJ).">
 <link rel="canonical" href="https://psicologajessicafreire.com.br/">
-<link rel="preload" as="image" href="img/jessica-hero.webp" fetchpriority="high">
+<link rel="preload" as="image" href="img/jessica-hero-400.webp" imagesrcset="img/jessica-hero-400.webp 400w, img/jessica-hero-800.webp 800w, img/jessica-hero.webp 1000w" imagesizes="(min-width:960px) 380px, 86vw" fetchpriority="high">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Jessica Wesley | Psicóloga — Gestalt-terapia Online e Presencial no RJ">
@@ -31,9 +36,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta property="og:image" content="https://psicologajessicafreire.com.br/img/jessica-hero.webp">
 <meta property="og:locale" content="pt_BR">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/inter-700.woff2" as="font" type="font/woff2" crossorigin>
 
 <script type="application/ld+json">
 {
@@ -54,6 +57,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
 
 <style>
+/* ===================== FONTS (self-hosted) ===================== */
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/inter-400.woff2") format("woff2")}
+@font-face{font-family:"Inter";font-style:normal;font-weight:500;font-display:swap;src:url("fonts/inter-500.woff2") format("woff2")}
+@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:swap;src:url("fonts/inter-600.woff2") format("woff2")}
+@font-face{font-family:"Inter";font-style:normal;font-weight:700;font-display:swap;src:url("fonts/inter-700.woff2") format("woff2")}
+@font-face{font-family:"Inter";font-style:italic;font-weight:500;font-display:swap;src:url("fonts/inter-500-italic.woff2") format("woff2")}
+
 /* ===================== TOKENS ===================== */
 :root{
   --cream:#F7F2E9;
@@ -378,7 +388,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <div class="hero-photo">
-      <img src="img/jessica-hero.webp" alt="Jessica Wesley, psicóloga, sorrindo de blazer branco" width="1000" height="1500" fetchpriority="high">
+      <img src="img/jessica-hero.webp" srcset="img/jessica-hero-400.webp 400w, img/jessica-hero-800.webp 800w, img/jessica-hero.webp 1000w" sizes="(min-width:960px) 380px, 86vw" alt="Jessica Wesley, psicóloga, sorrindo de blazer branco" width="1000" height="1500" fetchpriority="high">
       <span class="chip-crp"><span>CRP</span> 05/86018</span>
     </div>
   </div>
@@ -579,6 +589,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <summary>Atende convênios ou valor social?</summary>
         <p>Não. O atendimento é totalmente particular — não atendo convênios nem valor social.</p>
       </details>
+      <details class="reveal">
+        <summary>Por que não atendo por plano de saúde ou plataformas?</summary>
+        <p>Profissionais que atendem por planos de saúde ou plataformas costumam receber dezenas de pacientes por dia — e nem sempre há tempo de se dedicar de verdade ao estudo de cada caso. Eu prefiro atender menos pessoas e garantir excelência no acompanhamento do que buscar volume e correr o risco de perder a qualidade do cuidado.</p>
+      </details>
     </div>
   </div>
 </section>
@@ -631,7 +645,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 =================================================== */
 const CONFIG = {
   whatsapp: "5521988434400",
-  instagram: "https://www.instagram.com/"          // ⚠️ TROCAR: URL do perfil da Jessica
+  instagram: "https://www.instagram.com/jessicawesleypsi"
 };
 const WA_MSG = "Olá Jessica Wesley, vim do site e gostaria de mais informações.";
 
