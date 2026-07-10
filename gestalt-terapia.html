@@ -15,7 +15,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 
 <!-- ============================================================
-  LANDING PAGE — JESSICA WESLEY CABRAL FREIRE | PSICÓLOGA CRP 05/86018
+  LANDING PAGE — JÉSSICA WESLEY CABRAL FREIRE | PSICÓLOGA CRP 05/86018
   Estrutura de alta conversão (Sommar Marketing Digital)
   ⚠️ CONFIGURAR: número do WhatsApp e Instagram no bloco CONFIG
      (final do arquivo, dentro de <script>). São 2 linhas.
@@ -24,8 +24,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="img/jessica-avatar.webp" type="image/webp">
 <link rel="apple-touch-icon" href="img/jessica-avatar.webp">
-<title>Gestalt-terapia Online com Psicóloga | Jessica Wesley CRP 05/86018</title>
-<meta name="description" content="Gestalt-terapia online com a psicóloga Jessica Wesley (CRP 05/86018). Consciência e autonomia no aqui e agora, por vídeo. Agende pelo WhatsApp.">
+<title>Gestalt-terapia Online com Psicóloga | Jéssica Wesley CRP 05/86018</title>
+<meta name="description" content="Gestalt-terapia online com a psicóloga Jéssica Wesley (CRP 05/86018). Consciência e autonomia no aqui e agora, por vídeo. Agende pelo WhatsApp.">
 <link rel="canonical" href="https://psicologajessicafreire.com.br/gestalt-terapia.html">
 
 <meta property="og:type" content="website">
@@ -35,24 +35,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta property="og:image" content="https://psicologajessicafreire.com.br/img/jessica-hero.webp">
 <meta property="og:locale" content="pt_BR">
 
-<link rel="preload" as="image" href="img/jessica-hero-400.webp" imagesrcset="img/jessica-hero-400.webp 400w, img/jessica-hero-800.webp 800w, img/jessica-hero.webp 1000w" imagesizes="(min-width:960px) 380px, 86vw" fetchpriority="high">
+<link rel="preload" as="image" href="img/jessica-hero.webp" fetchpriority="high">
 <link rel="preload" href="fonts/inter-700.woff2" as="font" type="font/woff2" crossorigin>
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "name": "Jessica Wesley Cabral Freire — Psicóloga",
+  "name": "Jéssica Wesley Cabral Freire — Psicóloga",
   "identifier": "CRP 05/86018",
   "url": "https://psicologajessicafreire.com.br/",
   "image": "https://psicologajessicafreire.com.br/img/jessica-hero.webp",
   "areaServed": "Rio de Janeiro, RJ",
-  "founder": { "@type": "Person", "name": "Jessica Wesley Cabral Freire", "jobTitle": "Psicóloga" },
+  "founder": { "@type": "Person", "name": "Jéssica Wesley Cabral Freire", "jobTitle": "Psicóloga" },
   "address": [
     { "@type": "PostalAddress", "addressLocality": "Rio de Janeiro", "addressRegion": "RJ", "streetAddress": "Barra da Tijuca — Bl 02, Sala 109" },
     { "@type": "PostalAddress", "addressLocality": "Rio de Janeiro", "addressRegion": "RJ", "streetAddress": "Madureira — Sala 313" },
     { "@type": "PostalAddress", "addressLocality": "Rio de Janeiro", "addressRegion": "RJ", "streetAddress": "Valqueire — Sala 205" }
-  ]
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "bestRating": "5",
+    "reviewCount": "42"
+  }
 }
 </script>
 
@@ -87,7 +93,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 /* ===================== BASE ===================== */
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;overflow-x:hidden}
 body{
   font-family:var(--font-body);
   background:var(--cream);
@@ -244,6 +250,7 @@ h3{font-size:1.12rem;font-weight:600}
 .step h3{margin-bottom:.15rem}
 .step p{font-size:.92rem;color:var(--muted)}
 .como-cta{margin-top:2.2rem}
+.section-cta{margin-top:2.6rem;text-align:center}
 .como-photo{justify-self:center;width:min(360px,86%)}
 .como-photo img{width:100%;border-radius:999px 999px 28px 28px;box-shadow:var(--shadow)}
 @media(min-width:920px){.como .wrap{grid-template-columns:1.05fr .9fr}.como-photo{justify-self:end}}
@@ -271,7 +278,81 @@ h3{font-size:1.12rem;font-weight:600}
 .online-banner .ob-text strong{font-family:var(--font-display);font-size:1.25rem;font-weight:600}
 .online-banner .ob-text span{font-size:.9rem;opacity:.92}
 
+/* ===================== DEPOIMENTOS (Google) ===================== */
+.depoimentos{padding-bottom:4.8rem}
+.dep-header{
+  display:grid;gap:2rem;margin-bottom:2.8rem;align-items:center;text-align:center;
+}
+@media(min-width:768px){
+  .dep-header{grid-template-columns:auto 1fr;text-align:left;gap:3rem}
+}
+.dep-badge{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:1.4rem 1.8rem;box-shadow:var(--shadow);justify-self:center;min-width:168px;
+}
+.dep-badge-num{font-family:var(--font-display);font-size:2.8rem;font-weight:700;color:var(--ink);line-height:1}
+.dep-badge-stars{display:flex;justify-content:center;gap:.1rem;color:#FBBC04;margin:.4rem 0}
+.dep-badge-stars svg{width:18px;height:18px;fill:currentColor}
+.dep-badge-meta{font-size:.82rem;color:var(--muted);font-weight:600}
+.dep-header h2{text-align:inherit;margin-top:.45rem}
+.dep-header .h2-line{margin-left:0;margin-right:auto}
+@media(max-width:767px){.dep-header .h2-line{margin-left:auto;margin-right:auto}}
+.dep-google{
+  display:inline-flex;align-items:center;gap:.45rem;margin-top:.75rem;
+  font-size:.82rem;font-weight:600;color:var(--muted);
+}
+.dep-google svg{width:18px;height:18px;flex:none}
+.dep-slider{
+  position:relative;overflow:hidden;
+  mask-image:linear-gradient(90deg,transparent 0,#000 5%,#000 95%,transparent 100%);
+  -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 5%,#000 95%,transparent 100%);
+}
+.dep-track{display:flex;gap:1.1rem;width:max-content;animation:dep-marquee 48s linear infinite}
+.dep-slider:hover .dep-track{animation-play-state:paused}
+@keyframes dep-marquee{
+  0%{transform:translateX(0)}
+  100%{transform:translateX(calc(-50% - .55rem))}
+}
+.dep-card{
+  flex:0 0 min(340px,82vw);background:var(--card);border:1px solid var(--line);border-radius:18px;
+  padding:1.35rem 1.4rem 1.2rem;box-shadow:0 4px 18px rgba(40,50,44,.06);
+  display:flex;flex-direction:column;gap:.85rem;
+}
+.dep-card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:.5rem}
+.dep-card-stars{display:flex;gap:.1rem;color:#FBBC04;flex:none}
+.dep-card-stars svg{width:16px;height:16px;fill:currentColor}
+.dep-card-g{width:20px;height:20px;flex:none}
+.dep-quote{font-size:.92rem;color:var(--muted);line-height:1.62;flex:1;margin:0}
+.dep-author{
+  display:flex;align-items:center;gap:.75rem;
+  margin-top:auto;margin-inline:-1.4rem;margin-bottom:-1.2rem;
+  padding:.85rem 1.4rem 1.1rem;border-top:1px solid var(--line);
+  border-radius:0 0 17px 17px;background:var(--cream-2);
+}
+.dep-avatar{
+  width:40px;height:40px;border-radius:50%;flex:none;overflow:hidden;
+  background:var(--sage-soft);color:var(--deep);font-weight:700;font-size:.78rem;
+  display:flex;align-items:center;justify-content:center;
+}
+.dep-avatar img{width:100%;height:100%;object-fit:cover;display:block}
+.dep-avatar:has(img) span{display:none}
+.dep-author cite{font-style:normal;font-weight:600;font-size:.88rem;color:var(--deep);line-height:1.3}
+.dep-footer{text-align:center;margin-top:2rem}
+.dep-footer a{
+  display:inline-flex;align-items:center;gap:.5rem;font-weight:600;color:var(--deep);text-decoration:none;
+  border:1px solid var(--line);background:var(--card);padding:.75rem 1.35rem;border-radius:999px;
+  transition:background .2s ease,box-shadow .2s ease;
+}
+.dep-footer a:hover{background:var(--sage-soft);box-shadow:var(--shadow)}
+.dep-footer a svg{width:18px;height:18px;flex:none}
+@media(prefers-reduced-motion:reduce){
+  .dep-track{animation:none;flex-wrap:wrap;width:100%;justify-content:center}
+  .dep-slider{mask-image:none;-webkit-mask-image:none;overflow:visible}
+  .dep-card{flex:1 1 min(340px,100%)}
+}
+
 /* ===================== FAQ ===================== */
+
 .faq-list{max-width:760px;margin:2.4rem auto 0;display:grid;gap:.85rem}
 details{
   background:var(--card);border:1px solid var(--line);border-radius:16px;
@@ -362,7 +443,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section class="hero" id="inicio">
   <div class="wrap">
     <div class="hero-copy">
-      <span class="eyebrow">Jessica Wesley Cabral Freire · CRP 05/86018</span>
+      <span class="eyebrow">Jéssica Wesley Cabral Freire · CRP 05/86018</span>
       <h1>Gestalt-terapia Online</h1>
       <h2>Acompanhamento na abordagem Gestalt — consciência, autonomia e presença no aqui e agora. <em>Por vídeo, de onde estiver.</em></h2>
 
@@ -370,6 +451,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Abordagem Gestalt e Psicologia Sistêmica</li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Autoconhecimento e autonomia</li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Acolhimento e sigilo profissional</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Atendimento particular</li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Atendimento online em todo o Brasil</li>
       </ul>
 
@@ -384,7 +466,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <div class="hero-photo">
-      <img src="img/jessica-hero.webp" srcset="img/jessica-hero-400.webp 400w, img/jessica-hero-800.webp 800w, img/jessica-hero.webp 1000w" sizes="(min-width:960px) 380px, 86vw" alt="Jessica Wesley, psicóloga, sorrindo de blazer branco" width="1000" height="1500" fetchpriority="high">
+      <img src="img/jessica-hero.webp" alt="Jéssica Wesley, psicóloga, sorrindo de blazer branco" width="1000" height="1500" fetchpriority="high">
       <span class="chip-crp"><span>CRP</span> 05/86018</span>
     </div>
   </div>
@@ -455,6 +537,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p>Para quem quer parar de repetir os mesmos padrões, entender suas escolhas e construir uma relação mais consciente consigo mesmo e com o mundo.</p>
       </div>
     </div>
+
+    <div class="section-cta reveal">
+      <a class="btn-wa js-wa" href="#">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.1 4.49.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35z"/><path d="M12.04 2C6.56 2 2.1 6.45 2.1 11.93c0 1.75.46 3.45 1.33 4.95L2 22l5.25-1.38a9.93 9.93 0 0 0 4.79 1.22h.01c5.47 0 9.93-4.45 9.93-9.93A9.87 9.87 0 0 0 12.04 2zm0 18.16h-.01a8.2 8.2 0 0 1-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.55-3.7 8.24-8.23 8.24z"/></svg>
+        Agendar consulta particular
+      </a>
+    </div>
   </div>
 </section>
 
@@ -462,11 +551,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section class="section sobre" id="sobre">
   <div class="wrap">
     <div class="sobre-photo reveal">
-      <img src="img/jessica-sobre.webp" alt="Jessica Wesley Cabral Freire, psicóloga CRP 05/86018" loading="lazy" width="900" height="1350">
+      <img src="img/jessica-sobre.webp" alt="Jéssica Wesley Cabral Freire, psicóloga CRP 05/86018" loading="lazy" width="900" height="1350">
     </div>
     <div class="sobre-copy">
       <span class="eyebrow">Quem vai te acompanhar</span>
-      <h2 class="reveal">Jessica Wesley Cabral Freire</h2>
+      <h2 class="reveal">Jéssica Wesley Cabral Freire</h2>
       <p class="crp">CRP 05/86018</p>
       <p>Sou psicóloga com uma prática fundamentada na Gestalt-terapia e na Psicologia Sistêmica. Acredito que o processo terapêutico é um espaço de resgate da autonomia e da consciência no “aqui e agora”, sem ignorar as teias familiares e sociais que nos moldam.</p>
       <p>Minha atuação é dedicada ao cuidado de feridas profundas, oferecendo suporte técnico e empático em temas delicados como abusos, traumas na comunidade LGBTQIA+, além do manejo da depressão e ansiedade. Meu objetivo é caminhar ao lado de cada paciente na reconstrução de seus limites e na descoberta de novas formas de existir no mundo.</p>
@@ -522,7 +611,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
     <div class="como-photo reveal">
-      <img src="img/jessica-como-funciona.webp" alt="Jessica Wesley sentada em cadeira de madeira, sorrindo" loading="lazy" width="900" height="1350">
+      <img src="img/jessica-como-funciona.webp" alt="Jéssica Wesley sentada em cadeira de madeira, sorrindo" loading="lazy" width="900" height="1350">
     </div>
   </div>
 </section>
@@ -535,6 +624,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="locais">
       <div class="local reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        <div>Atendimento online<small>De onde estiver, no conforto da sua rotina</small></div>
+      </div>
+      <div class="local reveal">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
         <div>Barra da Tijuca<small>Bl 02, Sala 109</small></div>
       </div>
@@ -546,19 +639,111 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
         <div>Valqueire<small>Sala 205</small></div>
       </div>
-      <div class="local reveal">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-        <div>Atendimento online<small>De onde estiver, no conforto da sua rotina</small></div>
-      </div>
     </div>
 
     <div class="online-banner reveal">
-      <img src="img/jessica-online.webp" alt="Jessica Wesley em atendimento online pelo notebook" loading="lazy" width="1280" height="853">
+      <img src="img/jessica-online.webp" alt="Jéssica Wesley em atendimento online pelo notebook" loading="lazy" width="1280" height="853">
       <div class="ob-text">
         <strong>Online e Presencial</strong>
         <span>Gestalt-terapia — Rio de Janeiro e por vídeo</span>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ===================== DEPOIMENTOS ===================== -->
+<section class="section bg-2 depoimentos" id="depoimentos">
+  <div class="wrap">
+    <div class="dep-header reveal">
+      <div class="dep-badge">
+        <div class="dep-badge-num">5,0</div>
+        <div class="dep-badge-stars" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="dep-badge-meta">42 avaliações no Google</p>
+      </div>
+      <div>
+        <span class="eyebrow">Depoimentos</span>
+        <h2>O que dizem sobre o atendimento</h2>
+        <div class="h2-line"></div>
+        <p class="dep-google">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+          Avaliações verificadas no Google Meu Negócio
+        </p>
+      </div>
+    </div>
+
+    <div class="dep-slider reveal" aria-label="Depoimentos de pacientes no Google">
+      <div class="dep-track">
+        <article class="dep-card">
+          <div class="dep-card-top">
+            <div class="dep-card-stars" aria-label="5 de 5 estrelas"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+            <svg class="dep-card-g" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+          </div>
+          <blockquote class="dep-quote">É super atenciosa e paciente, me senti muito à vontade. É uma profissional excelente, clara e direta. Recomendo muito!</blockquote>
+          <div class="dep-author"><div class="dep-avatar"><img src="img/reviews/gislaine.webp" alt="" width="40" height="40" loading="lazy" onerror="this.remove()"><span>GL</span></div><cite>Gislaine Mendes Lira</cite></div>
+        </article>
+        <article class="dep-card">
+          <div class="dep-card-top">
+            <div class="dep-card-stars" aria-label="5 de 5 estrelas"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+            <svg class="dep-card-g" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+          </div>
+          <blockquote class="dep-quote">A Jéssica se comunica de um jeito super claro e direto. Ela consegue explicar as coisas da psicologia e as nossas…</blockquote>
+          <div class="dep-author"><div class="dep-avatar"><img src="img/reviews/ana-julia.webp" alt="" width="40" height="40" loading="lazy" onerror="this.remove()"><span>AJ</span></div><cite>Ana Júlia Mathias</cite></div>
+        </article>
+        <article class="dep-card">
+          <div class="dep-card-top">
+            <div class="dep-card-stars" aria-label="5 de 5 estrelas"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+            <svg class="dep-card-g" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+          </div>
+          <blockquote class="dep-quote">Foi ótimo! Super indico 👏🏼👏🏼</blockquote>
+          <div class="dep-author"><div class="dep-avatar"><img src="img/reviews/ana-gabriella.webp" alt="" width="40" height="40" loading="lazy" onerror="this.remove()"><span>AG</span></div><cite>Ana Gabriella de Oliveira</cite></div>
+        </article>
+        <article class="dep-card">
+          <div class="dep-card-top">
+            <div class="dep-card-stars" aria-label="5 de 5 estrelas"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+            <svg class="dep-card-g" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+          </div>
+          <blockquote class="dep-quote">Excelente profissional, atenciosa, carismática e nos ensinar o caminho para nos conhecemos.</blockquote>
+          <div class="dep-author"><div class="dep-avatar"><img src="img/reviews/maria-fatima.webp" alt="" width="40" height="40" loading="lazy" onerror="this.remove()"><span>MF</span></div><cite>Maria Fatima</cite></div>
+        </article>
+        <article class="dep-card">
+          <div class="dep-card-top">
+            <div class="dep-card-stars" aria-label="5 de 5 estrelas"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+            <svg class="dep-card-g" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+          </div>
+          <blockquote class="dep-quote">Excelente profissional! Sua sensibilidade, empatia e capacidade de ouvir sem julgamentos fazem toda a diferença na vida…</blockquote>
+          <div class="dep-author"><div class="dep-avatar"><img src="img/reviews/andreia.webp" alt="" width="40" height="40" loading="lazy" onerror="this.remove()"><span>AC</span></div><cite>Andreia Cristina</cite></div>
+        </article>
+        <article class="dep-card">
+          <div class="dep-card-top">
+            <div class="dep-card-stars" aria-label="5 de 5 estrelas"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+            <svg class="dep-card-g" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+          </div>
+          <blockquote class="dep-quote">A psicóloga demonstra competência, empatia e ética em seus atendimentos. Possui escuta ativa e proporciona um ambiente…</blockquote>
+          <div class="dep-author"><div class="dep-avatar"><img src="img/reviews/ana-carolina.webp" alt="" width="40" height="40" loading="lazy" onerror="this.remove()"><span>AP</span></div><cite>Ana Carolina Pontes</cite></div>
+        </article>
+        <article class="dep-card">
+          <div class="dep-card-top">
+            <div class="dep-card-stars" aria-label="5 de 5 estrelas"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+            <svg class="dep-card-g" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+          </div>
+          <blockquote class="dep-quote">Excelente profissional, muito dedicada, acolhedora com palavras precisas e entendimento humano.</blockquote>
+          <div class="dep-author"><div class="dep-avatar"><img src="img/reviews/fabiola.webp" alt="" width="40" height="40" loading="lazy" onerror="this.remove()"><span>FC</span></div><cite>Fabiola Carias</cite></div>
+        </article>
+      </div>
+    </div>
+
+    <p class="dep-footer reveal">
+      <a class="js-greviews" href="#">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+        Ver todas as 42 avaliações no Google
+      </a>
+    </p>
   </div>
 </section>
 
@@ -596,7 +781,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- ===================== CTA FINAL ===================== -->
 <section class="final" id="contato">
   <div class="wrap">
-    <img class="avatar reveal" src="img/jessica-avatar.webp" alt="Jessica Wesley sorrindo" loading="lazy" width="480" height="480">
+    <img class="avatar reveal" src="img/jessica-avatar.webp" alt="Jéssica Wesley sorrindo" loading="lazy" width="480" height="480">
     <h2 class="reveal">Você não precisa carregar isso sozinho(a).</h2>
     <p class="reveal">Dê o primeiro passo. Uma conversa pode mudar tudo.</p>
     <a class="btn-wa js-wa" href="#">
@@ -626,7 +811,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <span aria-hidden="true">·</span>
       <a href="terms-of-use.html">Termos de Uso</a>
     </nav>
-    <small>© <span id="year">2026</span> Jessica Wesley Cabral Freire — Psicóloga CRP 05/86018. Todos os direitos reservados.</small>
+    <small>© <span id="year">2026</span> Jéssica Wesley Cabral Freire — Psicóloga CRP 05/86018. Todos os direitos reservados.</small>
   </div>
 </footer>
 
@@ -641,9 +826,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 =================================================== */
 const CONFIG = {
   whatsapp: "5521988434400",
-  instagram: "https://www.instagram.com/jessicawesleypsi"
+  instagram: "https://www.instagram.com/jessicawesleypsi",
+  googleReviews: "https://www.google.com/maps/search/?api=1&query=Jéssica+Wesley+psicologa+Barra+da+Tijuca+RJ"
 };
-const WA_MSG = "Olá Jessica Wesley, vim do site e gostaria de mais informações.";
+const WA_MSG = "Olá Jéssica Wesley, vim do site e gostaria de mais informações.";
 
 /* WhatsApp em todos os CTAs */
 const waUrl = "https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent(WA_MSG);
@@ -654,8 +840,20 @@ document.querySelectorAll(".js-wa").forEach(a => {
 });
 document.querySelectorAll(".js-ig").forEach(a => a.href = CONFIG.instagram);
 
+document.querySelectorAll(".js-greviews").forEach(a => {
+  a.href = CONFIG.googleReviews;
+  a.target = "_blank";
+  a.rel = "noopener noreferrer";
+});
+
 /* Ano automático no footer */
 document.getElementById("year").textContent = new Date().getFullYear();
+
+/* Carrossel de depoimentos (loop infinito) */
+const depTrack = document.querySelector(".dep-track");
+if (depTrack && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  depTrack.innerHTML += depTrack.innerHTML;
+}
 
 /* Reveal on scroll (respeita reduced motion) */
 const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
